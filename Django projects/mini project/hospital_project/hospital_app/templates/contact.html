@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+.mydivstyle{
+box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+transform:translatey(-20px)
+}
+</style>
+<body>
+<div class="container" style="margin-top:50px;">
+<h2 class="text-center">About us</h2>
+    <br><br>
+    <div class="row mt-5 text-center">
+        <div class="col-lg-3 col-sm-6">
+          <h4><i class="fas fa-phone-square mydivstyle"></i> Contact</h4>
+            <p class="mt-3 font-weight-bold"><a class="text-danger" href="tel:+91 9398665243">+91 9398665243</a></p>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <h4><i class="fas fa-envelope"></i> Send Email</h4>
+            <p class="mt-3 font-weight-bold"><a class="text-danger" href="Email:saitejajeeguru123@gmail.com">saitejajeeguru123@gmail.com</a></p>
+        </div>
+         <div class="col-lg-3 col-sm-6">
+          <h4><i class="fas fa-phone-square"></i> Office address</h4>
+            <p class="mt-3 font-weight-bold"><a class="text-danger" href="http://maps.google.com/maps?q=Hyderabad">Hyderabad</a></p>
+        </div>
+         <div class="col-lg-3 col-sm-6">
+          <h4><i class="fas fa-phone-square"></i> Office Timings</h4>
+            <p class="mt-3 font-weight-bold text-danger"> 9:00 AM to 7:00PM</p>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>

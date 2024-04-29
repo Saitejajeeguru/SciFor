@@ -1,0 +1,36 @@
+<!-- templates/notepad/open_notepad.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Note</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class='container my-5'>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-danger text-light">Note Details</div>
+                    <div class="card-body">
+                        <h1 class="fs-5">{{note.title}}</h1>
+                        <p>{{note.text}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{% url 'new_notepad' %}" class="btn btn-secondary">Back</a>
+                        <a href="{% url 'edit_note' pk=note.id %}" class="btn btn-primary">Edit</a>
+                        <form method="post" action="{% url 'delete_note' pk=note.id %}" style="display: inline;">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

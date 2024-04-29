@@ -1,0 +1,40 @@
+body {
+      font-family: Arial, sans-serif;
+    }
+    .first_letter{
+        color: red;
+    }
+    .name{
+        font-weight: bold;
+    }
+    .home {
+      background-color: #f0f0f0;
+      padding: 250px 30px;
+      margin-bottom: 0;
+    }
+    .text_right{
+      text-align: left;
+      padding-left: 50px;
+    }
+    .about{
+     padding: 50px;
+    }
+    .section-heading {
+      color: red;
+      margin-bottom: 30px;
+      border-radius: 20px;
+    }
+    .card {
+      margin-bottom: 30px;
+      background-color: black;
+      color: white;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .project{
+      padding: 50px;
+    }
+    .contact{
+      background-color: grey;
+    }

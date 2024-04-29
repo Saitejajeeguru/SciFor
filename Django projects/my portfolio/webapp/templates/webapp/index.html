@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .first_letter{
+        color: red;
+    }
+    .name{
+        font-weight: bold;
+    }
+    .home {
+      background-color: #f0f0f0;
+      padding: 250px 30px;
+      margin-bottom: 0;
+    }
+    .text_right{
+      text-align: left;
+      padding-left: 50px;
+    }
+    .about{
+     padding: 50px;
+    }
+    .section-heading {
+      color: red;
+      margin-bottom: 30px;
+      border-radius: 20px;
+    }
+    .card {
+      margin-bottom: 30px;
+      background-color: black;
+      color: white;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .project{
+      padding: 50px;
+    }
+    .contact{
+      background-color: grey;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand name" href="#"><span class="first_letter">S</span>ai <span class="first_letter">T</span>eja<span class="first_letter">.</span>.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="home text-center ">
+  <div class="text_right">
+    <h1 class="display-4">Hi, I'm <span class="first_letter">Saiteja</span></h1>
+    <p class="lead">A showcase of my skills and projects</p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container about">
+  <h2 class="section-heading text-center">About Me</h2>
+  <p class="text-center">This Sai Teja Jeeguru. I have completed my bachelor's degree from Jyothishmathi Instutite of Technology and Science, Karimnagar in the stream of computer science and engineering (CSE).</p>
+  <p>Trinity Junior College Karimnagar, Telangana
+Intermediate, MPC - 82.8% 2017 - 2019</p>
+  <p>Trinity Model Secondary School Peddapalli, Telangana</p>
+  <p class="text-center">I am a fresher with knowledge in HTML, CSS, Bootstrap, Python, SQL, and JavaScript.</p>
+
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="container project">
+  <h2 class="section-heading text-center">Projects</h2>
+  <div class="row">
+    <!-- Project 1 -->
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Todo App</h5>
+          <p class="card-text">A To-Do application, it is used to add the works you want to do as a reminder and if the work is done we can tick it as done, then a line-through the text as crossing the text. If we don’t want that, we can delete it from database (i.e; local storage).</p>
+          <p class="card-text"><span class="bold">Technologies used:</span> HTML, CSS, Bootstrap, JavaScript</p>
+          <p><span class="bold">Link:</span> <a href="https://saitejajeeguru.ccbp.tech/">Click here to visit</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Project 2 -->
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Wikipedia search engine</h5>
+          <p class="card-text">A Wikipedia search engine where users can browse through the content they want to search and
+get the result only through wikipedia. Implemented mobile friendly layout using different HTML block, styled using CSS3 properties and javascript.</p>
+          <p><span class="bold">Technologies used:</span> HTML, CSS, Bootstrap, JavaScript</p>
+          <p><span class="bold">Link:</span> <a href="https://jstwikipedia.ccbp.tech/">Click here to visit</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Project 3 -->
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tip Calculator</h5>
+          <p class="card-text">A Tip Calculator, it is used to add the works you want to do as a reminder and if the work is done we can tick it as done, then a line-through the text as crossing the text. If we don’t want that, we can delete it from database.</p>
+           <p><span class="bold">Technologies used:</span> HTML, CSS, Bootstrap, JavaScript</p>
+          <p><span class="bold">Link:</span> <a href="https://saicalculate.ccbp.tech/">Click here to visit</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container contact">
+  <h2 class="text-center">Contact <span class="first_letter">Me</span></h2>
+  <p class="text-center">You can reach out to me via email at <a href="mailto:saitejajeeguru123@gmail.com">saitejajeeguru123@gmail.com</a></p>
+</section>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

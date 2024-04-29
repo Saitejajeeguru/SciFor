@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/home.css">
+</head>
+<body>
+    <nav class="nav-color navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand name" href="#index"><span class="first_letter">U</span>T</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="name navbar-nav mr-auto">
+            <li class="nav-item {% block home_active %}{% endblock %}">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item {% block edit_active %}{% endblock %}">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item {% block file_active %}{% endblock %}">
+                <a class="nav-link" href="#contact">Contact US</a>
+            </li>
+        </ul>
+        <ul class="name navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Home Section -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://media.excellentwebworld.com/wp-content/uploads/2022/03/31101349/on-demand-utility-application-solutions.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+
+<!-- About Section -->
+    <section id="about" class="container about my-5">
+      <h2 class="section-heading text-center text-danger">About</h2>
+      <p class="text-center">Welcome to our utility app!</p>
+      <p>Our app is designed to provide you with a suite of helpful tools for various tasks, including file handling, manipulation, calculator, and currency conversion.</p>
+      <h5>Notes</h5>
+      <p> Easily manage your notes for organization and productivity. Access, edit, delete, and create new notes effortlessly. Keep your workspace tidy by removing unnecessary content and capture thoughts and tasks quickly with note creation. Stay organized and productive with our utility app's notes feature!</p>
+      <h5>Calculator</h5>
+      <p>Need to crunch some numbers? Our built-in calculator is here to help. Perform basic arithmetic operations, complex calculations, or even solve equations quickly and accurately. With a user-friendly interface, you can perform calculations with ease and precision.</p>
+      <h5>Currency Converter</h5>
+      <p>Traveling abroad or dealing with international transactions? Our currency converter makes it easy to convert between different currencies. Simply select the currencies you want to convert, enter the amount, and instantly see the converted value. Stay up-to-date with accurate exchange rates and streamline your currency conversions.</p>
+      <p>Whether you're a student, professional, or casual user, our utility app is designed to meet your needs. Explore the features, simplify your tasks, and enhance your productivity with our versatile tools.</p>
+    </section>
+<!-- Frequently Asked Questions (FAQ) -->
+    <section>
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4 text-danger">FAQ</h2>
+                        <div class="accordion mt-4" id="faqAccordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <span class="toggle-icon">+</span> What are utility app?</button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                         A utility app is a software application designed to provide functionality and tools to perform specific tasks or solve particular problems. It often includes features such as file management, calculators, converters, and more.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <span class="toggle-icon">+</span> What features does the utility app offer?</button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        The utility app offers a range of features to enhance productivity and convenience, including file handling and manipulation, calculator, currency converter, note-taking, and more.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <span class="toggle-icon">+</span> How can I use the file handling feature of the utility app?</button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        With the file handling feature, you can easily manage files by uploading, downloading, editing, and manipulating them. Whether you need to create new documents, edit existing ones, or organize your files, our intuitive interface makes it simple and efficient.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <span class="toggle-icon">+</span> Does the utility app include a calculator?</button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                         Yes, the utility app includes a built-in calculator to perform basic arithmetic operations, complex calculations, or solve equations quickly and accurately. With a user-friendly interface, you can perform calculations with ease and precision.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            <span class="toggle-icon">+</span> Can I convert currencies using the utility app?</button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                         Absolutely! The utility app includes a currency converter feature, making it easy to convert between different currencies. Simply select the currencies you want to convert, enter the amount, and instantly see the converted value. Stay up-to-date with accurate exchange rates and streamline your currency conversions.
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Us  Section -->
+
+    <footer id="contact" class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <h2 class="text-danger">Contact Us</h2>
+            <p>If you have any questions or concerns, feel free to reach out to us:</p>
+            <ul class="list-inline">
+                <li class="list-inline-item mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>
+                    <a href="tel:123456789"><i class="fa fa-phone fa-lg"></i> 1234567890</a>
+                </li>
+                <li class="list-inline-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                    </svg>
+                    <a href="support@utilityapp.com"><i class="fa fa-envelope fa-lg"></i> support@utilityapp.com</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

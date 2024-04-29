@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/871317b255.js" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+    <!-- offer homepage.-->
+    <div id="sectionRegister">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-botto">
+            <a class="navbar-brand" href="#"><img src="https://i.etsystatic.com/13653916/r/il/28ac6c/3941574298/il_fullxfull.3941574298_5njz.jpg" class="logo-navbar" /></a>
+            <form class="form-inline my-2 my-lg-0 mr-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto aa">
+
+                    <a class="nav-link aaa" href="#" id="navItem4">Home <span class="sr-only">(current)</span></a>
+
+
+                    <a class="nav-link aaa" href="#sectionProducts" id="navItem1">Products</a>
+
+
+                    <a class="nav-link aaa" href="#sectionFeature" id="navItem2">Features</a>
+
+
+                    <a class="nav-link aaa" href="#sectionChooseus" id="navItem3">Why choose us?</a>
+
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="banner-img d-flex flex-column justify-content-center">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="text-center">
+                            <h1 class="banner-headder">Healthy <span class="next1-sp-banner">Fruits </span>and <span class="next1-sp-banner">Vegetables </span> </h1>
+                            <p class="banner-para"> SOURCE MATERIALS OF ORGANIC AND NATURAL FOODS</p>
+                            <button class=" next1-butt" onclick="display('sectionFeature')"> Order now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Feature section.-->
+    <div id="sectionFeature" class="border-feature">
+        <div class="wcu-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="wcu-sec-headding text-center">Our <span class="feature-sec-span"> Features </span> </h1>
+                    </div>
+                    <div class=" col-12  col-md-4 col-xl-4 mb-3">
+                        <div class="wcu-card p-3">
+                            <img src="https://img.freepik.com/premium-vector/concept-healthy-lifestyle-vector-illustration-vegetables-fruits-large-tray-healthy-food-vector-illustration-concept-modern-style-flat-design_610956-206.jpg?w=900" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3"> Fresh And Organic </h1>
+                            <p class="wcu-card-description">Discover the benefits of eating healthy with our all-new range of organic food!..</p>
+                            <button class="btn btn-outline-dark button-feature"> Read more.</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3 col-xl-4 ">
+                        <div class="wcu-card p-3 ">
+                            <img src="https://img.freepik.com/premium-vector/online-delivery-service-concept-warehouse-scooter_42237-978.jpg?w=740" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">Free Delivery </h1>
+                            <p class="wcu-card-description"> Grab our exciting deals,Knock! Knock! it's a Free shipping</p>
+                            <button class="btn btn-outline-success button-feature">Read more.</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3 col-xl-4 ">
+                        <div class="wcu-card p-3 ">
+                            <img src="https://teleworkph.com/wp-content/uploads/2020/03/Essential-Backend-Factors-for-Your-E-Commerce-Business2-min-768x512-1.jpg" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3"> Easy Payments </h1>
+                            <p class="wcu-card-description">Free Coupons & Offers upto <span class="offers"> 50% OFF </span> and Exclusive Promo Codes Available.</p>
+                            <button class="btn btn-outline-danger button-feature">Read more.</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Category section.-->
+
+
+    <div id="sectionCategory">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="category-sec-main-headder mt-4 mb-5">SHOP BY <span class="category-sec-main-span">CATEGORY</span></h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="  text-center category-sec-main-container">
+                        <h1 class="category-sec-card-headder"> Vegitables </h1>
+                        <p class="category-sec-card-description">Upto 30% Off</p>
+                        <div>
+                            <img src="https://cdn.pixabay.com/photo/2015/05/04/10/16/vegetables-752153__480.jpg" class="category-sec-card-image " />
+                        </div>
+                        <a href="https://vegetablevin.ccbp.tech/"> <button class="category-sec-card-btn btn btn-outline-success"> Shop now</button> </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="  text-center category-sec-main-container">
+                        <h1 class="category-sec-card-headder"> Juice </h1>
+                        <p class="category-sec-card-description">Upto 20% Off</p>
+                        <div>
+                            <img src="https://thumbs.dreamstime.com/b/badam-milk-drink-served-glass-cup-276750696.jpg" class="category-sec-card-image" />
+                        </div>
+                        <a href="https://juicesvin.ccbp.tech/"> <button class="category-sec-card-btn btn btn-outline-success"> Shop now</button> </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="  text-center category-sec-main-container">
+                        <h1 class="category-sec-card-headder"> Dry Fruits </h1>
+                        <p class="category-sec-card-description">Upto 25% Off</p>
+                        <div>
+                            <img src="https://thumbs.dreamstime.com/b/assortment-dry-fruits-nuts-assortment-dry-fruits-nuts-judaic-holiday-tu-bishvat-copy-space-109314893.jpg" class="category-sec-card-image" />
+                        </div>
+                        <button class="category-sec-card-btn btn btn-outline-success"> Shop now</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="  text-center category-sec-main-container">
+                        <h1 class="category-sec-card-headder"> Fruits </h1>
+                        <p class="category-sec-card-description">Upto 30% Off</p>
+                        <div>
+                            <img src="https://i0.wp.com/vinayakhingane.com/wp-content/uploads/2022/04/Free-Fruit-Wallpaper-HD.jpg?ssl=1" class="category-sec-card-image" />
+                        </div>
+                        <button class="category-sec-card-btn btn btn-outline-success"> Shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCTS SECTION .-->
+    <div id="sectionProducts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="product-sec-main-headder text-center mt-4 mb-4 p-2"> Our <span class="product-span"> Products </span> </h1>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 ">
+                    <div class="box-product shadow-lg text-center p-3 mb-4">
+                        <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1712258.jpg" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder">Cabbage </h3>
+                        <div class="product-sec-price "> $5.99/- - 11.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 ">
+                    <div class="box-product shadow-lg text-center p-3 mb-4">
+                        <img src="https://img.freepik.com/premium-photo/onions_489827-3012.jpg?w=2000" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder"> Onions </h3>
+                        <div class="product-sec-price "> $4.99/- - 10.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center p-3 mb-4">
+                        <img src="https://e1.pxfuel.com/desktop-wallpaper/287/890/desktop-wallpaper-leaves-food-tomatoes-flowers-white-background-fruit-drops-tails-dish-produce-land-plant-flowering-plant-vegetable-potato-and-tomato-genus-garnish-5601x3201-genus.jpg" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder">Tomatos </h3>
+                        <div class="product-sec-price "> $6.99/- - 11.93/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center p-3 mb-4">
+                        <img src="https://t3.ftcdn.net/jpg/02/99/43/48/360_F_299434842_UF1e0k44KUpkdtAEu0XbbPVnTHFuRwAm.jpg" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder">Carrot </h3>
+                        <div class="product-sec-price "> $4.99/- - 10.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center mb-4 p-3">
+                        <img src="https://img.freepik.com/premium-photo/almonds-isolated-white-background_252965-339.jpg?w=2000" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder">Almods </h3>
+                        <div class="product-sec-price "> $6.9/- - 14.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center mb-4 p-3">
+                        <img src="https://t3.ftcdn.net/jpg/05/39/40/84/360_F_539408401_R33KRYzTWavxfH6qyja1oiPTSx63DGNu.jpg" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder">Kismis </h3>
+                        <div class="product-sec-price "> $8.99/- - 14.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center p-3 mb-4">
+                        <img src="https://static5.depositphotos.com/1020804/405/i/950/depositphotos_4059470-stock-photo-ripe-cashew-nuts-with-leaves.jpg" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder">Cashew Nuts </h3>
+                        <div class="product-sec-price "> $5.99/- - 10.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center mb-4 p-3">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/28/457/93/almonds-walnuts-roasted-saucer-wallpaper-preview.jpg" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder">Pahadi Badam </h3>
+                        <div class="product-sec-price "> $4.99/- - 10.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center p-3 mb-4">
+                        <img src="https://thumbs.dreamstime.com/b/watermelon-white-background-juicy-watermelon-watermelon-slice-red-fruit-watermelon-white-background-juicy-watermelon-152991817.jpg" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder"> Watermelon </h3>
+                        <div class="product-sec-price "> $3.99/- - 7.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center p-3 mb-4">
+                        <img src="https://freerangestock.com/sample/139655/fresh-yellow-lemons-on-white-background.jpg" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder">Fresh Lemons </h3>
+                        <div class="product-sec-price "> $5.99/- - 8.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center p-3 mb-4">
+                        <img src="https://i.pinimg.com/originals/b8/39/3c/b8393ccd0f271772cc7d4796857637a9.jpg" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder">Banana </h3>
+                        <div class="product-sec-price "> $4.99/- - 10.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center p-3 mb-4">
+                        <img src="https://img.freepik.com/premium-photo/pineapple-isolated-white-background_88281-13.jpg?w=2000" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder"> Pineapple</h3>
+                        <div class="product-sec-price "> $4.99/- - 10.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center">
+                        <img src="https://img.freepik.com/premium-photo/almond-milk-with-almond-nuts-isolated-white-background_252965-837.jpg" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder">Badam Juice </h3>
+                        <div class="product-sec-price "> $4.99/- - 8.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center p-3 mb-4">
+                        <img src="https://img.freepik.com/premium-photo/pomegranate-juice-pomegranate-fruit-isolated-white-background_167862-7.jpg?w=2000" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder pr-4 ">PomegranateJuice </h3>
+                        <div class="product-sec-price "> $4.99/- - 10.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center">
+                        <img src="https://img.freepik.com/premium-photo/papaya-juice-glass-white-background_525574-3312.jpg?w=2000" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder">PaPaya Juice </h3>
+                        <div class="product-sec-price "> $6.99/- - 11.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="box-product shadow-lg text-center p-3 mb-4">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/219/157/244/table-milk-plate-pitcher-wallpaper-preview.jpg" class="product-sec-image w-100" />
+                        <h3 class="product-sec-card-headder">Badam_Juice </h3>
+                        <div class="product-sec-price "> $4.99/- - 10.99/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div> <button class="product-sec-btnn btn btn-outline-warning mr-3"> Add to Cart <i class="fa-solid fa-cart-shopping"> </i></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OFFER SECTION-->
+
+    <div id="sectionOffer" class=" offer-sec-div mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="shadow-lg offer-sec-container offer-sec text-center">
+                        <img src="https://t3.ftcdn.net/jpg/03/27/63/84/360_F_327638419_gUfSbee6jvwBQOU461KY6Hc2BC1HwPmS.jpg" class="offer-sec-container-image w-100" />
+                        <div class="ml-5  ">
+                            <h1 class="offer-sec-container-headder"> Special Offer </h1>
+                            <p class="offer-sec-container-para">Upto 55% Off</p>
+                            <button class=" btn-outline-warning offer-sec-container-btn">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="shadow-lg offer-sec-container1 offer-sec text-center">
+                        <img src="https://peppershomeandgarden.com/wp-content/uploads/2022/06/do-cherry-trees-need-full-sun.jpg" class="offer-sec-container-image w-100" />
+                        <div class="ml-5  ">
+                            <h1 class="offer-sec-container-headder"> Limited Offer </h1>
+                            <p class="offer-sec-container-para">Upto 40% Off</p>
+                            <button class="offer-sec-container-btn btn-outline-danger">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHY CHOOSE US SECTION .-->
+
+    <div id="sectionChooseus">
+        <h1 class="choose-sec-headder text-center"> Why <span class="choose-sec-span">Choose </span>Us? </h1>
+        <div class="chooseus mt-4 mb-4">
+
+            <div class="container ">
+                <div class="row">
+                    <div class="col-12">
+
+                        <p class="choose-sec-para"> We are an organic food delivery service that specializes in providing fresh, healthy, and pesticide-free meals straight to your door. We only use the finest ingredients and source our produce from local farmers who adhere to organic farming practices. This way, we can ensure that our customers are getting the highest quality food possible. </p>
+                    </div>
+                    <div class="col-12  col-md-4  mb-3">
+                        <div class="choose-sec-card shadow-lg p-3">
+                            <img src="https://img.freepik.com/free-photo/postman-delivery-man-wearing-mask-carry-small-box-deliver-customer-front-door-home-woman-wearing-mask-prevent-covid-19-coronavirus-infection-outbreak-home-delivery-shopping-concept_1150-45762.jpg?w=2000" class="wcu-cardimage w-100" />
+                            <h1 class="wcu-card-title mt-3"> Food Service </h1>
+                            <p class="wcu-card-description">Experience fine dining at the comfort of your home. All your orders are carefully packed and arranged..</p>
+                        </div>
+                    </div>
+                    <div class="col-12  col-md-4  mb-3">
+                        <div class="choose-sec-card1 shadow-lg p-3">
+                            <img src="https://timesofindia.indiatimes.com/thumb/msid-76850772,width-1200,height-900,resizemode-4/.jpg" class="wcu-cardimage w-100" />
+                            <h1 class="wcu-card-title mt-3">Fresh Food </h1>
+                            <p class="wcu-card-description">It is fresher. Organic product is purchased fresh from farmers also It supports local farmers directly..</p>
+                        </div>
+                    </div>
+                    <div class="col-12  col-md-4  mb-3">
+                        <div class="choose-sec-card1 shadow-lg p-3">
+                            <img src="https://thumbs.dreamstime.com/b/money-growht-soil-tree-concept-business-success-finance-sunshine-nature-94730830.jpg" class="wcu-cardimage w-100" />
+                            <h1 class="wcu-card-title mt-3">Save Money </h1>
+                            <p class="wcu-card-description">Save. Spend. Save money to survive. Don't hasten for money also Good food is worth every penny</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOLLOW SECTION .         if want to add remove shadow from product sec and add shadow at css hover -->
+
+    <div class="follow-section pt-2 pb-2" id="fuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-section-headding "> Follow Us </h1>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="follow-section-container">
+                            <i class="fa-brands fa-twitter icon"></i>
+                        </div>
+                        <div class="follow-section-container">
+                            <a href="https://www.instagram.com/saitejajeeguru/" target="-blank"> <i class="fab fa-instagram icon"></i> </a>
+                        </div>
+                        <div class="follow-section-container">
+                            <a href="https://linkedin.com/in/sai-teja-jeeguru-a50037224/A" target="-blank"> <i class="fa-brands fa-linkedin icon"></i> </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOTTER SECTION .-->
+
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://i.etsystatic.com/13653916/r/il/28ac6c/3941574298/il_fullxfull.3941574298_5njz.jpg" class="footer-image" />
+                    <h1 class="footer-sec-mail-id"> saitejajeeguru123@gmail.com</h1>
+                    <p class="footer-sec-address">Hyderabad, India.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
